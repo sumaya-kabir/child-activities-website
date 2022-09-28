@@ -11,7 +11,7 @@ const Home = () => {
     }, []);
 
     return (
-        <div>
+        <div className='home'>
             <div className="activities-container">
                 <Activities
                 key={activities.id}
@@ -19,7 +19,7 @@ const Home = () => {
                 ></Activities>
             </div>
             <div className="activities-record-container">
-
+                    
             </div>
         </div>
     );

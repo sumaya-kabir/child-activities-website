@@ -1,3 +1,14 @@
+.home {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+}
+
 .activities-container {
     margin: 0 100px;
+}
+
+.activities-record-container {
+    border: 2px solid #F8B332;
+    border-radius: 15px;
+    margin-right: 20px;
 }

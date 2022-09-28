@@ -1,17 +1,15 @@
 import React from 'react';
+import SingleActivity from '../SingleActivity/SingleActivity';
 import './Activities.css';
-const Activities = ({ activities }) => {
+const Activities = ({ activities, key }) => {
     return (
         <div className='activities'>
             <h2>Animals Themed Activities and Crafts for Children</h2>
             {
-                activities.map(activity => (
-                        <div>
-                            <img src={activity.picture} alt=''/>
-                            <h2>{activity.name}</h2>
-                        </div>
-                    
-                ))
+                <SingleActivity
+                key={key}
+                activities={activities}
+                ></SingleActivity>
             }
         </div>
     );

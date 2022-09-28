@@ -1,0 +1,27 @@
+.activity {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 50px
+}
+
+.card {
+    width: 220px;
+    height: 550px;
+    padding: 15px;
+    border: 2px solid #F8B332;
+    border-radius: 10px;
+    position: relative
+}
+
+.card img{
+    width: 100%;
+    height: 200px;
+}
+
+.btn-add {
+    width: 100%;
+    background-color: #F8B332;
+    border: none;
+    border-radius: 5px;
+}
