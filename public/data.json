@@ -1,6 +1,6 @@
 [
     {
-      "id": "6334a00b1b237360e05c8b6d",
+      "id": 1,
       "picture": "https://www.childfun.com/wp-content/uploads/2008/10/birds-280x300.png",
       "age": "2-5",
       "name": "Birds Activities & Fun Ideas",
@@ -8,7 +8,7 @@
       "description": "You have come to the right place if you are looking for fun, engaging and exciting Bird themed activities to do with toddlers, preschoolers and kindergartners. Our activities are used by teachers, moms, dads, child care providers and more!"
     },
     {
-      "id": "6334a00b6fcede417f021847",
+      "id": 2,
       "picture": "https://www.childfun.com/wp-content/uploads/2008/10/butterfly-300x206.png",
       "age": "2-5",
       "name": "Bugs & Butterfly Crafts",
@@ -16,7 +16,7 @@
       "description": "You have come to the right place if you are looking for fun, engaging and exciting Bugs and Butterfly themed activities to do with toddlers, preschoolers and kindergartners. Our activities are used by teachers, moms, dads, child care providers and more!"
     },
     {
-      "id": "6334a00b649bbeb2bf9c15f0",
+      "id": 3,
       "picture": "https://www.childfun.com/wp-content/uploads/2008/10/animals_20386339.jpg",
       "age": "2-5",
       "name": "Bunny Activities & Fun Ideas",
@@ -24,7 +24,7 @@
       "description": "You have come to the right place if you are looking for fun, engaging and exciting Bunny themed activities to do with toddlers, preschoolers and kindergartners. Our activities are used by teachers, moms, dads, child care providers and more!"
     },
     {
-      "id": "6334a00bd3df6f99b2696d87",
+      "id": 4,
       "picture": "https://www.childfun.com/wp-content/uploads/2008/10/kitten-300x297.png",
       "age": "2-5",
       "name": "Cats & Kittens Crafts",
@@ -32,7 +32,7 @@
       "description": "You have come to the right place if you are looking for fun, engaging and exciting Cats and Kitten themed activities to do with toddlers, preschoolers and kindergartners. Our activities are used by teachers, moms, dads, child care providers and more!"
     },
     {
-      "id": "6334a00bfff1651713ccee3e",
+      "id": 5,
       "picture": "https://www.childfun.com/wp-content/uploads/2008/10/animals_21726611.jpg",
       "age": "2-5",
       "name": "Lion & Tiger Crafts",
@@ -40,7 +40,7 @@
       "description": "You have come to the right place if you are looking for fun, engaging and exciting Lion & Tiger themed activities to do with toddlers, preschoolers and kindergartners. Our activities are used by teachers, moms, dads, child care providers and more!"
     },
     {
-      "id": "6334a00b84388d7653e7d03b",
+      "id": 6,
       "picture": "https://www.childfun.com/wp-content/uploads/2008/10/animals_20994767.jpg",
       "age": "2-5",
       "name": "Teddy Bear Crafts",

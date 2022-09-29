@@ -4,7 +4,7 @@ import user from './parent.jpg';
 import { ToastContainer, toast } from 'react-toastify';
   import 'react-toastify/dist/ReactToastify.css';
 
-const RecordActivity = () => {
+const RecordActivity = (record) => {
     const notify = () => toast("Activity Completed!");
     return (
         <div className='record-container'>
@@ -47,7 +47,7 @@ const RecordActivity = () => {
                 <h3>Activity Details</h3>
                 <div className="child-info">
                     <h4>Crafting Time</h4>
-                    <p>200 seconds</p>
+                    <p>{record.prevTime}</p>
                 </div>
                 <div className="child-info">
                     <h4>Break Time</h4>

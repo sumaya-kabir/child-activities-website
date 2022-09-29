@@ -4,6 +4,7 @@ import RecordActivity from '../RecordActivity/RecordActivity';
 import './Home.css';
 const Home = () => {
     const [activities, setActivities] = useState([]);
+    const [record, setRecord] = useState([]);
 
     useEffect(() => {
         fetch('data.json')
@@ -15,11 +16,16 @@ const Home = () => {
         <div className='home'>
             <div className="activities-container">
                 <Activities
+                key={activities.id}
                 activities={activities}
+                record={record}
+                setRecord={setRecord}
                 ></Activities>
             </div>
             <div className="activities-record-container">
-                    <RecordActivity></RecordActivity>
+                    <RecordActivity
+                    record={record}
+                    ></RecordActivity>
             </div>
         </div>
     );
