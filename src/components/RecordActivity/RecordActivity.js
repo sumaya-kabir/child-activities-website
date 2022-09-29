@@ -1,10 +1,14 @@
 import React from 'react';
-import './RecordActivity.css'
-import user from './parent.jpg'
+import './RecordActivity.css';
+import user from './parent.jpg';
+import { ToastContainer, toast } from 'react-toastify';
+  import 'react-toastify/dist/ReactToastify.css';
 
 const RecordActivity = () => {
+    const notify = () => toast("Activity Completed!");
     return (
-        <div>
+        <div className='record-container'>
+            {/* Parent and child info */}
             <div className="parent-info">
                 <img src={user} alt="" />
                 <div>
@@ -26,6 +30,8 @@ const RecordActivity = () => {
                     <h3>2 yr</h3>
                 </div>
             </div>
+
+            {/* Break time  */}
             <div className="break-container">
             <h3>Need Break</h3>
             <div className="child-info">
@@ -35,6 +41,21 @@ const RecordActivity = () => {
                 <button className='break-btn'>20m</button>
             </div>
             </div>
+
+            {/* Excercise Detail  */}
+            <div className='activity-details'>
+                <h3>Activity Details</h3>
+                <div className="child-info">
+                    <h4>Crafting Time</h4>
+                    <p>200 seconds</p>
+                </div>
+                <div className="child-info">
+                    <h4>Break Time</h4>
+                    <p>100 seconds</p>
+                </div>
+            </div>
+            <button onClick={notify} className='complete-btn'><p>Activity Completed</p></button>
+            <ToastContainer />
         </div>
     );
 };
