@@ -26,6 +26,15 @@ const RecordActivity = () => {
                     <h3>2 yr</h3>
                 </div>
             </div>
+            <div className="break-container">
+            <h3>Need Break</h3>
+            <div className="child-info">
+                <button className='break-btn'>5m</button>
+                <button className='break-btn'>10m</button>
+                <button className='break-btn'>15m</button>
+                <button className='break-btn'>20m</button>
+            </div>
+            </div>
         </div>
     );
 };

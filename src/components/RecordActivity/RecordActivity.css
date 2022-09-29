@@ -24,3 +24,19 @@
     color: #F8B332;
     font-weight: 700;
 }
+
+.break-container h3{
+    margin-left: 20px;
+}
+
+.break-btn {
+    border: 2px solid #F8B332;
+    padding: 15px;
+    border-radius: 50%;
+    color: #F8B332;
+}
+
+.break-btn:hover {
+    background-color: #F8B332;
+    color: #fff;
+}
