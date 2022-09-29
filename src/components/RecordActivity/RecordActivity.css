@@ -1,0 +1,26 @@
+.parent-info {
+    display: flex;
+}
+
+.parent-info img{
+    width: 20%;
+    border: 2px solid #F8B332;
+    border-radius: 50%;
+    margin: 10px;
+    padding: 5px;
+}
+
+.child-info {
+    display: flex;
+    justify-content: space-around;
+    border: 2px solid #F8B332;
+    border-radius: 15px;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+}
+
+.child-info p {
+    color: #F8B332;
+    font-weight: 700;
+}

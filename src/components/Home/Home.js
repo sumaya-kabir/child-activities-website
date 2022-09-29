@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Activities from '../Activities/Activities';
+import RecordActivity from '../RecordActivity/RecordActivity';
 import './Home.css';
 const Home = () => {
     const [activities, setActivities] = useState([]);
@@ -19,7 +20,7 @@ const Home = () => {
                 ></Activities>
             </div>
             <div className="activities-record-container">
-                    
+                    <RecordActivity></RecordActivity>
             </div>
         </div>
     );
