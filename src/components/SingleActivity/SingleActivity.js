@@ -1,22 +1,20 @@
 import React from 'react';
 import './SingleActivity.css'
-const SingleActivity = ({ activities, key }) => {
+const SingleActivity = ({ activity }) => {
+    const {name, age, time, description, picture} = activity;
     return (
-        <div className='activity'>
-            {
-                activities.map(activity => (
-                    <div className='card'>
-                        <img src={activity.picture} alt=''/>
+        <div>
+            
+            <div className='card'>
+                        <img src={picture} alt=''/>
                         <div className='card-info'>
-                            <h2>{activity.name}</h2>
-                            <p><b>Age:</b>  {activity.age}</p>
-                            <p><b>Time:</b>  {activity.time}hr</p>
-                            <p>{activity.description.slice(0, 100)}...</p>
+                            <h2>{name}</h2>
+                            <p><b>Age:</b>  {age}</p>
+                            <p><b>Time:</b>  {time}hr</p>
+                            <p>{description.slice(0, 100)}...</p>
                             <button className='btn-add'><p>Add this activities</p></button>
                         </div>
                     </div>
-                ))
-            }
         </div>
     );
 };

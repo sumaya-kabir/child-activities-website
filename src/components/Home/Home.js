@@ -15,7 +15,6 @@ const Home = () => {
         <div className='home'>
             <div className="activities-container">
                 <Activities
-                key={activities.id}
                 activities={activities}
                 ></Activities>
             </div>
