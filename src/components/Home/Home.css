@@ -1,6 +1,7 @@
 .home {
     display: grid;
     grid-template-columns: 4fr 2fr;
+    margin-bottom: 100px;
 }
 
 .activities-container {
@@ -11,4 +12,30 @@
     border: 2px solid #F8B332;
     border-radius: 15px;
     margin-right: 20px;
+}
+
+/* Responsive styles */
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .home {
+        display: flex;
+        flex-direction: column;
+        row-gap: 30px;
+        align-items: center;
+    }
+
+    .activities-record-container {
+        width: 400px;
+        margin: 0px 100px;
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 991px) {
+    /* For tablets: */
+    .home {
+        display: flex;
+        flex-direction: column;
+        row-gap: 30px;
+        align-items: center;
+    }
 }

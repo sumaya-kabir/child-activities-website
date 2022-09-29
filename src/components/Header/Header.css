@@ -2,3 +2,21 @@
     margin-top: 100px;
     margin-left: 100px;
 }
+
+/* Responsive styles */
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .header{
+        text-align: center;
+        margin-left: 0;
+    }
+    
+}
+
+@media only screen and (min-width: 769px) and (max-width: 991px)  {
+    /* For tablets: */
+    .header{
+        text-align: center;
+        margin-left: 0;
+    }
+}
