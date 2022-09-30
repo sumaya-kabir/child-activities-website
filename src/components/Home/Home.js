@@ -4,8 +4,23 @@ import RecordActivity from '../RecordActivity/RecordActivity';
 import './Home.css';
 const Home = () => {
     const [activities, setActivities] = useState([]);
-    const [record, setRecord] = useState([]);
+    const [totalTime, setTotalTime] = useState(0);
 
+    const handleAddActivities = (currentTime) => {
+        const updatedTime = totalTime + currentTime
+        setTotalTime(updatedTime);
+        localStorage.setItem("Craft-time", JSON.stringify(updatedTime));
+        return;
+    };
+
+    useEffect(() => {
+        const craftData = localStorage.getItem("Craft-time");
+        handleAddActivities(JSON.parse(craftData));
+    }, []);
+
+    
+
+    
     useEffect(() => {
         fetch('data.json')
         .then(res => res.json())
@@ -16,15 +31,14 @@ const Home = () => {
         <div className='home'>
             <div className="activities-container">
                 <Activities
-                key={activities.id}
                 activities={activities}
-                record={record}
-                setRecord={setRecord}
+                handleAddActivities={handleAddActivities}
                 ></Activities>
             </div>
             <div className="activities-record-container">
                     <RecordActivity
-                    record={record}
+                    handleAddActivities={handleAddActivities}
+                    totalTime={totalTime}
                     ></RecordActivity>
             </div>
         </div>

@@ -1,17 +1,16 @@
 import React from 'react';
 import SingleActivity from '../SingleActivity/SingleActivity';
 import './Activities.css';
-const Activities = ({ activities, record, setRecord, key }) => {
+const Activities = ({ activities, handleAddActivities }) => {
     return (
         <div className='activities'>
             <h2>Animals Themed Activities and Crafts for Children</h2>
                 <div className='activity'>
                 {
                     activities.map(activity => <SingleActivity
-                    key={key}
+                    key={activities.id}
                     activity={activity}
-                    record={record}
-                    setRecord ={setRecord}
+                    handleAddActivities={handleAddActivities}
                     
                     ></SingleActivity> )
                 }

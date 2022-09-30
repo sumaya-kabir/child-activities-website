@@ -1,10 +1,10 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './RecordActivity.css';
 import user from './parent.jpg';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
-const RecordActivity = (record) => {
+const RecordActivity = ({ totalTime }) => {
     const notify = () => toast("Activity Completed!");
 
     const [takeBreak, setTakeBreak] = useState(0);
@@ -12,9 +12,15 @@ const RecordActivity = (record) => {
     const handleBreakTime = (breakTime) => {
         const takeBreak = breakTime;
         setTakeBreak(takeBreak);
-        localStorage.setItem("Break-time", takeBreak);
+        localStorage.setItem("Break-time", JSON.stringify(takeBreak));
         return;
     }
+
+    useEffect(() => {
+        const breakData = localStorage.getItem("Break-time");
+        handleBreakTime(JSON.parse(breakData));
+    }, [])
+
 
     return (
         <div className='record-container'>
@@ -57,7 +63,7 @@ const RecordActivity = (record) => {
                 <h3>Activity Details</h3>
                 <div className="child-info">
                     <h4>Crafting Time</h4>
-                    <p>{record.prevTime}</p>
+                    <p>{totalTime}hrs</p>
                 </div>
                 <div className="child-info">
                     <h4>Break Time</h4>
